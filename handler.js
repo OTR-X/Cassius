@@ -59,7 +59,7 @@ module.exports = handle = (client, Client) => {
                 Client.sendFileFromUrl(data.from, `${ytm.thumb}`, 'thumb.jpg', teks, data.message)
                 Client.sendFileFromUrl(data.from, `${ytm.link}`, 'video.mp4', `Video telah terkirim @${data.sender.split('@')[0]}`, data.message)
             } catch (e) {
-                data.reply('К сожалению, ошибка серчера или, возможно, apikey недействителен')
+                data.reply('К сожалению, ошибка сервера или возможно apikey недействителен')
             }
         })
         Client.cmd.on('музыка', async (data) => {
@@ -75,7 +75,7 @@ module.exports = handle = (client, Client) => {
                 Client.sendFileFromUrl(data.from, ytm.thumb, 'thumb.jpg', teks, data.message)
                 Client.sendFileFromUrl(data.from, ytm.link, `${ytm.title} - Download.mp3`, ``, data.message)
             } catch {
-                data.reply('К сожалению, ошибка серчера или, возможно, apikey недействителен')
+                data.reply('К сожалению, ошибка сервера или возможно apikey недействителен')
             }
         })
         /*RANDOM*/
