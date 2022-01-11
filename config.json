@@ -1,6 +1,6 @@
 {	
-	"prefix": "multi", 
-	"defaultSessionName": "bot", 
+	"prefix": ".", 
+	"defaultSessionName": "WHATSAPPER", 
 	"zeksKey": "apikey",
 	"autoRead": true,
 	"self": false, 
